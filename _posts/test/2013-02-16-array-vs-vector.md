@@ -29,27 +29,27 @@ Five operations are tested for both classes, running up to 10.000.000 iterations
 * shift.
 
 In all computers the results were very similar, check the values above:<br>
-```
+```text
 1. __push__ (10.000.000 iterations)
-	* Array: 659 ms<br>
-	* Vector: 1337 ms<br>
-	* Array was ~2 times faster<br>
+	* Array: 659 ms
+	* Vector: 1337 ms
+	* Array was ~2 times faster
 2. __access__ (10.000.000 iterations)
-	* Array: 48 ms<br>
-	* Vector: 40 ms<br>
-	* Vector was 1.2 times faster<br>
+	* Array: 48 ms
+	* Vector: 40 ms
+	* Vector was 1.2 times faster
 3. __pop__ (10.000.000 iterations)
-	* Array: 223 ms<br>
-	* Vector: 107 ms<br>
-	* Vector was ~2.1 times faster<br>
+	* Array: 223 ms
+	* Vector: 107 ms
+	* Vector was ~2.1 times faster
 4. __unshift__ (50.000 iterations)
-	* Array: 778 ms<br>
-	* Vector: 1569 ms<br>
-	* Array was ~2 times faster<br>
+	* Array: 778 ms
+	* Vector: 1569 ms
+	* Array was ~2 times faster
 5. __shift__ (50.000 iterations)
-	* Array: 838 ms<br>
-	* Vector: 1665 ms<br>
-	* Array was ~2 times faster<br>
+	* Array: 838 ms
+	* Vector: 1665 ms
+	* Array was ~2 times faster
 ```
 
 In conclusion, Array was faster than Vector - proving that operations over Vectors are not *much faster* than when using Array.<br>
