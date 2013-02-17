@@ -29,4 +29,4 @@ You may run the test and take your own conclusions.<br>
 Visit the repo, where the test is hosted: [https://github.com/loteixeira/VectorVsArray](https://github.com/loteixeira/VectorVsArray)<br>
 Also, you may check the online version of the test: [http://disturbedcoder.com/files/VectorVsArray.swf](http://disturbedcoder.com/files/VectorVsArray.swf)<br>
 
-**MY CONCLUSION:<br>In every computer which I ran the test, Array is faster for most operations.**<br>
+**MY CONCLUSION: In every computer which I ran the test Array is faster.**<br>
