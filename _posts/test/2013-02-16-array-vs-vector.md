@@ -25,7 +25,8 @@ Five operations were tested for both classes:
 * unshift; and
 * shift.
 
-**CONCLUSION:<br>In every computer which I ran the test, Array is faster for mostly operations.**<br><br>
+**CONCLUSION:<br>In every computer which I ran the test, Array is faster for mostly operations.**<br>
+
 You can check in your own computer, and take your own conclusions:<br>
 Check the repo, where the code is hosted: [https://github.com/loteixeira/VectorVsArray]([https://github.com/loteixeira/VectorVsArray])<br>
 Also, you may check the online test: [http://disturbedcoder.com/files/VectorVsArray.swf]([https://github.com/loteixeira/VectorVsArray])
