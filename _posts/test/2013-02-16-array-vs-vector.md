@@ -29,6 +29,7 @@ Five operations are tested for both classes, running up to 10.000.000 iterations
 * shift.
 
 In all computers the results were very similar, check the values above:<br>
+```
 1. __push__ (10.000.000 iterations)
 	* Array: 659 ms<br>
 	* Vector: 1337 ms<br>
@@ -49,6 +50,7 @@ In all computers the results were very similar, check the values above:<br>
 	* Array: 838 ms<br>
 	* Vector: 1665 ms<br>
 	* Array was ~2 times faster<br>
+```
 
 In conclusion, Array was faster than Vector - proving that operations over Vectors are not *much faster* than when using Array.<br>
 Vist the [repository](https://github.com/loteixeira/VectorVsArray) where the test is hosted.<br>
