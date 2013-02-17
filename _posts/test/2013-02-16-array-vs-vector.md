@@ -55,8 +55,8 @@ Check the average time values below (the test ran five times):<br>
 	* Vector: 833 ms
 	The values may be considered equivalent
 
-In conclusion, maybe it's not safe to say that operations with Vectors are _much faster_ than operations with Arrays.<br>
-Vist the [repository of the test](https://github.com/loteixeira/VectorVsArray) and [run the online version](http://disturbedcoder.com/files/VectorVsArray.swf).<br>
+In conclusion, maybe it's not safe to say that operations with Vectors are _much faster_ than operations with Arrays. The time difference between Array.push and Vector.push, for example, makes Array more likely when you need to add dinamically elements into the end of the container. And the other operations don't seems to have a big speed boost with Vectors.<br>
+Vist the [source code repository of the test](https://github.com/loteixeira/VectorVsArray) and [run the online version](http://disturbedcoder.com/files/VectorVsArray.swf).<br>
 
 Computer specification:
 * Processor: Intel Core 2 Duo @ 2.80 GHz
