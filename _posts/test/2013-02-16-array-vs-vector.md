@@ -26,7 +26,7 @@ Five operations were tested for both classes:
 * shift.
 
 You can check in your own computer, and take your own conclusions:<br>
-Visit the repo, where the test is hosted: [https://github.com/loteixeira/VectorVsArray]([https://github.com/loteixeira/VectorVsArray])<br>
-Also, you may check the online version of the test: [http://disturbedcoder.com/files/VectorVsArray.swf]([http://disturbedcoder.com/files/VectorVsArray.swf])<br>
+Visit the repo, where the test is hosted: [https://github.com/loteixeira/VectorVsArray](https://github.com/loteixeira/VectorVsArray)<br>
+Also, you may check the online version of the test: [http://disturbedcoder.com/files/VectorVsArray.swf](http://disturbedcoder.com/files/VectorVsArray.swf)<br>
 
 **MY CONCLUSION:<br>In every computer which I ran the test, Array is faster for mostly operations.**<br>
