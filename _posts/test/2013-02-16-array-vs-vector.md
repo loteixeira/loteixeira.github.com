@@ -8,52 +8,58 @@ tags: ["actionscript3", "test", "array", "vector"]
 {% include JB/setup %}
 
 Since Flash Player 10 we have two options to work with containers: Array and Vector.<br>
-Flash Array class is identical to JavaScript Array, they have the same interface.<br>
-So, why a new container?<br>
+Flash Array is identical to JavaScript Array, they have the same interface.<br>
+And about Vector?<br>
 
-Vector is a typed container where all elements are of the same class. In my view, somehow it's similar to C native vectors - and in Flash they are widely used for bitmaps, 3D, etc.<br>
+Vector is a typed container where all elements are of the same class. In my view it's similar to C native vectors - even because in Flash they are widely used for bitmaps, 3D, etc.<br>
 According to [Vector's official documentation](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html), there are a set of differences between both containers:<br>
 > * A Vector is a dense array. (...)<br>
 > * A Vector can optionally be fixed-length, (...)<br>
 > * Access to a Vector's elements is bounds-checked. (...)<br>
 
-Thus, the Vector would have some benefits over Array, which one of them is:<br>
+Thus, a Vector would have some benefits over an Array, which one of them is:<br>
 > Performance: array element access and iteration are much faster when using a Vector instance than they are when using an Array.<br>
-For a while I gave credit to Adobe's word, but I heard from different sources that Array is faster than Vector. Then I made a speed test (in fact it's a fight) to take my own conclusions.<br>
+For a while I gave credit to Adobe's word, but I heard from different sources that Array is faster than Vector. Then I made a speed test to take my own conclusions.<br>
 
-Five operations are tested for both classes, running up to 10.000.000 iterations:
+Five operations with integers were tested for both classes:
 * push;
 * access;
 * pop;
 * unshift; and
 * shift.
 
-In all computers the results were very similar, check the values below:<br>
+Check the average time values below (the test ran five times):<br>
 
 	push (10.000.000 iterations):
-	* Array: 659 ms
-	* Vector: 1337 ms
-	Array was ~2 times faster
+	* Array: 603,6 ms
+	* Vector: 1120,6 ms
+	Array was ~1,856 times faster
 
 	access operator[] (10.000.000 iterations):
-	* Array: 48 ms
+	* Array: 48,8 ms
 	* Vector: 40 ms
-	Vector was 1.2 times faster
+	Vector was 1,22 times faster
 
 	pop (10.000.000 iterations):
-	* Array: 223 ms
-	* Vector: 107 ms
-	Vector was ~2.1 times faster
+	* Array: 221,8 ms
+	* Vector: 102,8 ms
+	Vector was ~2,157 times faster
 
 	unshift (50.000 iterations):
-	* Array: 778 ms
-	* Vector: 1569 ms
-	Array was ~2 times faster
+	* Array: 784,4 ms
+	* Vector: 779,6 ms
+	Vector was ~1,006 times faster
 
 	shift (50.000 iterations):
-	* Array: 838 ms
-	* Vector: 1665 ms
-	Array was ~2 times faster
+	* Array: 833,2 ms
+	* Vector: 833 ms
+	The values may be considered equivalent
 
-In conclusion, averagely Array took less time than Vector - proving that operations with Vectors are not _much faster_.<br>
-Vist the [repository](https://github.com/loteixeira/VectorVsArray) of the test and [run the online version](http://disturbedcoder.com/files/VectorVsArray.swf).
+In conclusion, maybe it's not safe to say that operations with Vectors are _much faster_ than operations with Arrays.<br>
+Vist the [repository of the test](https://github.com/loteixeira/VectorVsArray) and [run the online version](http://disturbedcoder.com/files/VectorVsArray.swf).<br>
+
+Computer specification:
+* Processor: Intel Core 2 Duo @ 2.80 GHz
+* RAM: 4 GB
+* OS: Windows 7 64-bit
+* Flash Player: Version 11.6.602.167
