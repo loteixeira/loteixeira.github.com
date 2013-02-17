@@ -18,7 +18,7 @@ For a while I gave some credit to Adobe's words, but one day a workmate told me 
 
 Thus, I decided to make a test (in fact it's a boxe fight) to check how much time each class takes to execute basic container operations.<br>
 
-Five operations were tested for both classes:
+Five operations are tested for both classes:
 * push;
 * access;
 * pop;
