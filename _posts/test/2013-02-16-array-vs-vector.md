@@ -19,7 +19,7 @@ According to [Vector's official documentation](http://help.adobe.com/en_US/Flash
 
 Thus, the Vector would have some benefits over Array, which one of them is:<br>
 > Performance: array element access and iteration are much faster when using a Vector instance than they are when using an Array.<br>
-For a while I gave credit to Adobe's word, but I heard that Array is faster than Vector from different sources. Then, I got curious and decided to make a speed test (in fact it's a fight).<br>
+For a while I gave credit to Adobe's word, but I heard from different sources that Array is faster than Vector. Then I made a speed test (in fact it's a fight) to take my own conclusions.<br>
 
 Five operations are tested for both classes, running up to 10.000.000 iterations:
 * push;
@@ -28,28 +28,32 @@ Five operations are tested for both classes, running up to 10.000.000 iterations
 * unshift; and
 * shift.
 
-In all computers the results were very similar, check the values above:<br>
-	`push (10.000.000 iterations)
-		* Array: 659 ms
-		* Vector: 1337 ms
-		* Array was ~2 times faster
-	access (10.000.000 iterations)
-		* Array: 48 ms
-		* Vector: 40 ms
-		* Vector was 1.2 times faster
-	pop (10.000.000 iterations)
-		* Array: 223 ms
-		* Vector: 107 ms
-		* Vector was ~2.1 times faster
-	unshift (50.000 iterations)
-		* Array: 778 ms
-		* Vector: 1569 ms
-		* Array was ~2 times faster
-	shift (50.000 iterations)
-		* Array: 838 ms
-		* Vector: 1665 ms
-		* Array was ~2 times faster`
+In all computers the results were very similar, check the values below:<br>
 
-In conclusion, Array was faster than Vector - proving that operations over Vectors are not *much faster* than when using Array.<br>
-Vist the [repository](https://github.com/loteixeira/VectorVsArray) where the test is hosted.<br>
-Also, try running the [online version](http://disturbedcoder.com/files/VectorVsArray.swf).
+	push (10.000.000 iterations):
+	* Array: 659 ms
+	* Vector: 1337 ms
+	Array was ~2 times faster
+
+	access operator[] (10.000.000 iterations):
+	* Array: 48 ms
+	* Vector: 40 ms
+	Vector was 1.2 times faster
+
+	pop (10.000.000 iterations):
+	* Array: 223 ms
+	* Vector: 107 ms
+	Vector was ~2.1 times faster
+
+	unshift (50.000 iterations):
+	* Array: 778 ms
+	* Vector: 1569 ms
+	Array was ~2 times faster
+
+	shift (50.000 iterations):
+	* Array: 838 ms
+	* Vector: 1665 ms
+	Array was ~2 times faster
+
+In conclusion, averagely Array took less time than Vector - proving that operations with Vectors are not _much faster_.<br>
+Vist the [repository](https://github.com/loteixeira/VectorVsArray) of the test and [run the online version](http://disturbedcoder.com/files/VectorVsArray.swf).
