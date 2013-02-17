@@ -13,9 +13,9 @@ So, why a new container?<br>
 
 Vector is a typed container where all elements are of the same class. In my view, somehow it's similar to C native vectors - and in Flash they are widely used for bitmaps, 3D, etc.<br>
 According to [Vector's official documentation](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html), there are a set of differences between both containers:<br>
-> A Vector is a dense array. (...)
-> A Vector can optionally be fixed-length, (...)
-> Access to a Vector's elements is bounds-checked. (...)
+> A Vector is a dense array. (...)<br>
+> A Vector can optionally be fixed-length, (...)<br>
+> Access to a Vector's elements is bounds-checked. (...)<br>
 
 Thus, the Vector would have some benefits over Array, which one of them is:<br>
 > Performance: array element access and iteration are much faster when using a Vector instance than they are when using an Array.<br>
@@ -29,23 +29,23 @@ Five operations are tested for both classes, running up to 10.000.000 iterations
 * shift.
 
 In all computers the results were very similar, check the values above:<br>
-* **push** (10.000.000 iterations)
+* __push__ (10.000.000 iterations)
   * Array: 659 ms
   * Vector: 1337 ms
   * Array was ~2 times faster
-* **access** (10.000.000 iterations)
+* __access__ (10.000.000 iterations)
   * Array: 48 ms
   * Vector: 40 ms
   * Vector was 1.2 times faster
-* **pop** (10.000.000 iterations)
+* __pop__ (10.000.000 iterations)
   * Array: 223 ms
   * Vector: 107 ms
   * Vector was ~2.1 times faster
-* **unshift** (50.000 iterations)
+* __unshift__ (50.000 iterations)
   * Array: 778 ms
   * Vector: 1569 ms
   * Array was ~2 times faster
-* **shift** (50.000 iterations)
+* __shift__ (50.000 iterations)
   * Array: 838 ms
   * Vector: 1665 ms
   * Array was ~2 times faster
