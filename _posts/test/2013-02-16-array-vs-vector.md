@@ -20,7 +20,7 @@ Thus, I decided to make a test (in fact it's a boxe fight) to check how much tim
 
 Five operations were tested for both classes:
 * push;
-* access (using operator [[]]);
+* access;
 * pop;
 * unshift; and
 * shift.
