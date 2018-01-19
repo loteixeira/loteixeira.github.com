@@ -2,9 +2,8 @@
 layout: post
 title: "Back to Blogging"
 date: 2018-01-19
-category: "personal" 
+categories: personal
 ---
-
 Has been a long time since my last blog post. A lot of things have changed in the past few years.
 Finally I joined the game development industry and I'm working with Unity3D/C#.
 
