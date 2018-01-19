@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "AS3 Pixel Conversion Utils"
-description: ""
+date: 2013-06-25
 category: "util" 
-tags: ["actionscript3", "util", "pixel", "int", "uint", "array", "object"]
 ---
-{% include JB/setup %}
 
 Flash programmers are not used to bitwise operations. Period.
 
