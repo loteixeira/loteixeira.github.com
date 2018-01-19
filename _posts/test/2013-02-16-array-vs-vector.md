@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "AS3 Speed Test: Array Vs Vector"
-date: 2013-02-16
 categories: test
 ---
+
 Since Flash Player 10 we have two options to work with containers: Array and Vector.<br>
 Flash Array is identical to JavaScript Array, they have the same interface.<br>
 And about Vector?<br>

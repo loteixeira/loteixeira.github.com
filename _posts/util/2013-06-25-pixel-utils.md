@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "AS3 Pixel Conversion Utils"
-date: 2013-06-25
 categories: util
 ---
+
 Flash programmers are not used to bitwise operations. Period.
 
 Even though, such operations are indeed very important in ActionScript3. For example, pixel components (red, green, blue and alpha) are commonly packed into a 32 bits unsigned integer - see [BitmapData's official documentation](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html).
