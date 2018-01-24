@@ -18,14 +18,20 @@
       <div class="inner">
 
         <header>
-          <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-          <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+			<a href="{{ base }}/index.html">
+				<h1>{{ site.title }}</h1>
+				<h2>{{ site.description }}</h2>
+			</a>
+			<a href="{{ base }}/index.html">home</a> | <a href="ddd">donate</a> | <a href="aa">about</a> | <a href="eee">contact</a>
         </header>
         <hr>
+		<h4>{{ page.date | date: "%B %-d %Y"}}</h4>
+		<h1>{{ page.title }}</h1>
+		<br>
         <section id="main_content">
           {{ content }}
         </section>
-		
+
         <footer>
         {% if site.github.is_project_page %}
           {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
