@@ -1,6 +1,7 @@
 ---
 layout: post
 ---
+
 <ul>
   {% for post in site.posts %}
     <li>
@@ -8,3 +9,5 @@ layout: post
     </li>
   {% endfor %}
 </ul>
+
+
