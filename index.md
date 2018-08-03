@@ -9,5 +9,4 @@ layout: post
     </li>
   {% endfor %}
 </ul>
-
-
+<br>
